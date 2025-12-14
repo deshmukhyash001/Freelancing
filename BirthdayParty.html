@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #a9a9a9;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 5px;
+            background-color: #ffffff;
+        }
+
+        .price {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+    <title>Ekdhant - BirthdayParty Photo Gallery</title>
+</head>
+<body>
+
+    <div class="gallery">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="hap.jpg" alt="Photo 1">
+            <div class="card-content">
+                <p>Text below the card</p>
+                <div class="price">$19.99</div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="hap.jpg" alt="Photo 2">
+            <div class="card-content">
+                <p>Text below the card</p>
+                <div class="price">$24.99</div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="hap.jpg" alt="Photo 3">
+            <div class="card-content">
+                <p>Text below the card</p>
+                <div class="price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="hap.jpg" alt="Photo 3">
+            <div class="card-content">
+                <p>Text below the card</p>
+                <div class="price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="hap.jpg" alt="Photo 3">
+            <div class="card-content">
+                <p>Text below the card</p>
+                <div class="price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="hap.jpg" alt="Photo 3">
+            <div class="card-content">
+                <p>Text below the card</p>
+                <div class="price">$29.99</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
