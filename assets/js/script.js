@@ -45,7 +45,7 @@ window.addEventListener("scroll", headerActive);
 
 function makeCall() {
   // Replace "your-phone-number" with the actual phone number
-  var phoneNumber = "7709228355";
+  var phoneNumber = "8788511805";
   window.location.href = "tel:" + phoneNumber;
 }
 
