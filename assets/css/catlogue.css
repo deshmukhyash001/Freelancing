@@ -1,0 +1,258 @@
+/* =====================
+   RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* =====================
+   FLOATING ICONS
+===================== */
+.floating {
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp {
+    bottom: 90px;
+}
+
+.call {
+    bottom: 20px;
+}
+
+.floating img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+}
+
+.floating img:hover {
+    transform: scale(1.1);
+}
+
+/* =====================
+   FILTER BUTTONS
+===================== */
+.filters {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    padding: 10px 22px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: #ff4d6d;
+    color: white;
+}
+
+/* =====================
+   GALLERY GRID
+===================== */
+.gallery {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* =====================
+   GLASS CARD
+===================== */
+.card {
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: transform 0.35s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* =====================
+   PRICE BADGE
+===================== */
+.price {
+    display: inline-block;
+    padding: 6px 15px;
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+/* =====================
+   SEE MORE CARD
+===================== */
+.more {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* =====================
+   MODAL
+===================== */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 15px;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 15px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+/* =====================
+   TABLET (≤ 768px)
+===================== */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .floating img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* =====================
+   MOBILE (≤ 480px)
+===================== */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .filters {
+        gap: 8px;
+    }
+
+    .filters button {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .floating {
+        right: 10px;
+    }
+
+    .whatsapp {
+        bottom: 80px;
+    }
+
+    .floating img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .more img {
+        width: 60px;
+        height: 60px;
+    }
+}
