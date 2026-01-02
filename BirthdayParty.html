@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekdhant - Birthday Party Gallery</title>
+    <link rel="stylesheet" href="assets/css/catlogue.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating whatsapp">
+    <a href="https://wa.me/918788511805" target="_blank">
+        <img src="assets/images/whatsapp_logo.png">
+    </a>
+</div>
+
+<div class="floating call">
+    <a href="tel:+918788511805">
+        <img src="assets/images/call-logo.png">
+    </a>
+</div>
+
+<!-- FILTERS -->
+<div class="filters">
+    <button class="active" onclick="filterCards('all', event)">All</button>
+    <button onclick="filterCards('Animal', event)">Animal</button>
+    <button onclick="filterCards('Jungle', event)">Jungle</button>
+    <button onclick="filterCards('Barbie', event)">Barbie</button>
+    <button onclick="filterCards('Butterfly', event)">Butterfly</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+    <div class="card" data-theme="Jungle">
+        <img src="assets/images/Birthday_Decoration/Photo1.jpeg">
+        <div class="card-content">
+            <p>Jungle Theme</p>
+            <span class="price">₹ 13,999</span>
+        </div>
+    </div>
+
+    <div class="card" data-theme="Cocomelon">
+        <img src="assets/images/Birthday_Decoration/Photo2.jpeg">
+        <div class="card-content">
+            <p>Cocomelon Theme</p>
+            <span class="price">₹ 15,999</span>
+        </div>
+    </div>
+
+    <div class="card" data-theme="Butterfly">
+        <img src="assets/images/Birthday_Decoration/Photo3.jpeg">
+        <div class="card-content">
+            <p>Butterfly Theme</p>
+            <span class="price">₹ 13,999</span>
+        </div>
+    </div>
+
+    <div class="card" data-theme="Animal">
+        <img src="assets/images/Birthday_Decoration/Photo4.jpeg">
+        <div class="card-content">
+            <p>Animal Theme</p>
+            <span class="price">₹ 13,999</span>
+        </div>
+    </div>
+
+    <div class="card" data-theme="Animal">
+        <img src="assets/images/Birthday_Decoration/Photo5.jpeg">
+        <div class="card-content">
+            <p>Animal Theme</p>
+            <span class="price">₹ 12,999</span>
+        </div>
+    </div>
+
+    <div class="card" data-theme="Barbie">
+        <img src="assets/images/Birthday_Decoration/Photo6.jpeg">
+        <div class="card-content">
+            <p>Barbie Theme</p>
+            <span class="price">₹ 18,999</span>
+        </div>
+    </div>
+
+    <a href="https://wa.me/918788511805" style="text-decoration:none">
+        <div class="card more">
+            <img src="assets/images/whl.jpeg">
+            <h3>See More</h3>
+        </div>
+    </a>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <img id="modalImg">
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
